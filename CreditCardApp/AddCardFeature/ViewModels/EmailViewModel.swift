@@ -14,7 +14,8 @@ protocol EmailCellDelegate {
 class EmailIDViewModel {
     private var model: EmailModel
     private var delegate: EmailCellDelegate
-    
+    var didChangeEmail: ((_ email: String?) -> Void)?
+
     init(model: EmailModel, delegate: EmailCellDelegate) {
         self.model = model
         self.delegate = delegate
@@ -23,6 +24,7 @@ class EmailIDViewModel {
     func setEmail(email: String) {
         model.emailID = email
         delegate.didUpdateEmailID(emailID: email)
+        didChangeEmail?(email)
     }
     
     func getEmail() -> String? {

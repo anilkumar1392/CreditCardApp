@@ -67,12 +67,14 @@ public class CreditCardViewModel {
 
 extension CreditCardViewModel: PhoneNumberCellDelegate, EmailCellDelegate {
     func didUpdateEmailID(emailID: String?) {
-        print("CreditCardViewModel--- \(emailID)")
         setEmailID(emailId: emailID)
     }
     
     func didUpdatePhoneNumber(phoneNumber: String?) {
-        print("CreditCardViewModel--- \(phoneNumber)")
         setPhoneNumber(number: phoneNumber)
+    }
+    
+    func emailUpdated(_ email: String?) -> Void {
+        setEmailID(emailId: emailID)
     }
 }

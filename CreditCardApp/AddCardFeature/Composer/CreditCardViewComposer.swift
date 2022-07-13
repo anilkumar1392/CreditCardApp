@@ -15,7 +15,7 @@ public class CreditCardViewComposer {
         let vc = CreditCardViewController.make(viewModel: viewModel)
         
         let phoneNoController = getPhoneNumberController(delegate: viewModel)
-        let emailController = getEmailController(delegate: viewModel)
+        let emailController = getEmailController(delegate: viewModel, emailObserver: viewModel)
 
         vc.tableModel = [phoneNoController, emailController]
         return vc
@@ -32,6 +32,7 @@ public class CreditCardViewComposer {
         return PhoneNumberCellController(viewModel: phoneNoViewModel)
     }
     
+    /*
     private static func getEmailController(delegate: EmailCellDelegate) -> EmailIdCellController {
         let emailModel = EmailModel(
             emailID: nil,
@@ -39,6 +40,17 @@ public class CreditCardViewComposer {
             regex: EmailModel.emailRegex,
             placeHolder: "Enter Email")
         let viewModel = EmailIDViewModel(model: emailModel, delegate: delegate)
+        return EmailIdCellController(viewModel: viewModel)
+    } */
+    
+    private static func getEmailController(delegate: EmailCellDelegate, emailObserver: CreditCardViewModel) -> EmailIdCellController {
+        let emailModel = EmailModel(
+            emailID: nil,
+            errorMsg: nil,
+            regex: EmailModel.emailRegex,
+            placeHolder: "Enter Email")
+        let viewModel = EmailIDViewModel(model: emailModel, delegate: delegate)
+        viewModel.didChangeEmail = emailObserver.emailUpdated
         return EmailIdCellController(viewModel: viewModel)
     }
 
