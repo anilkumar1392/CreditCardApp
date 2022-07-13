@@ -9,21 +9,55 @@
 /* Begin PBXBuildFile section */
 		F52FABD6287BDE4B0059C691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FABD5287BDE4B0059C691 /* AppDelegate.swift */; };
 		F52FABD8287BDE4B0059C691 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FABD7287BDE4B0059C691 /* SceneDelegate.swift */; };
-		F52FABDA287BDE4B0059C691 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FABD9287BDE4B0059C691 /* ViewController.swift */; };
-		F52FABDD287BDE4B0059C691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52FABDB287BDE4B0059C691 /* Main.storyboard */; };
 		F52FABDF287BDE4D0059C691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52FABDE287BDE4D0059C691 /* Assets.xcassets */; };
 		F52FABE2287BDE4D0059C691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52FABE0287BDE4D0059C691 /* LaunchScreen.storyboard */; };
+		F52FABF1287BDF400059C691 /* CreditCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FABF0287BDF400059C691 /* CreditCardViewModel.swift */; };
+		F52FABF3287BDF640059C691 /* CreditCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FABF2287BDF640059C691 /* CreditCardModel.swift */; };
+		F52FABF6287BDFF30059C691 /* CreditCardViewComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FABF5287BDFF30059C691 /* CreditCardViewComposer.swift */; };
+		F52FABFB287BE9580059C691 /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FABF9287BE9580059C691 /* CreditCardViewController.swift */; };
+		F52FABFC287BE9580059C691 /* CreditCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F52FABFA287BE9580059C691 /* CreditCardViewController.xib */; };
+		F52FABFF287BEAE30059C691 /* PhoneNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FABFD287BEAE30059C691 /* PhoneNumberCell.swift */; };
+		F52FAC00287BEAE30059C691 /* PhoneNumberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F52FABFE287BEAE30059C691 /* PhoneNumberCell.xib */; };
+		F52FAC03287BEC8A0059C691 /* EmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FAC01287BEC8A0059C691 /* EmailCell.swift */; };
+		F52FAC04287BEC8A0059C691 /* EmailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F52FAC02287BEC8A0059C691 /* EmailCell.xib */; };
+		F52FAC07287BF25F0059C691 /* PhoneNumberCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FAC06287BF25F0059C691 /* PhoneNumberCellController.swift */; };
+		F52FAC09287BF32C0059C691 /* PhoneNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FAC08287BF32C0059C691 /* PhoneNumberViewModel.swift */; };
+		F52FAC0C287BF3A50059C691 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FAC0B287BF3A50059C691 /* UITableView+Extension.swift */; };
+		F52FAC0E287BFAD20059C691 /* ValidateRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FAC0D287BFAD20059C691 /* ValidateRegex.swift */; };
+		F52FAC10287BFB540059C691 /* PhoneNumberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FAC0F287BFB540059C691 /* PhoneNumberModel.swift */; };
+		F52FAC12287C113C0059C691 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FAC11287C113C0059C691 /* UITextField+Extension.swift */; };
+		F5E8AFC1287ED21B0034B7FD /* EmailIdCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8AFC0287ED21B0034B7FD /* EmailIdCellController.swift */; };
+		F5E8AFC3287ED3530034B7FD /* EmailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8AFC2287ED3530034B7FD /* EmailModel.swift */; };
+		F5E8AFC5287ED3670034B7FD /* EmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8AFC4287ED3670034B7FD /* EmailViewModel.swift */; };
+		F5E8AFC7287ED7690034B7FD /* CreditCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8AFC6287ED7690034B7FD /* CreditCardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F52FABD2287BDE4B0059C691 /* CreditCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52FABD5287BDE4B0059C691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F52FABD7287BDE4B0059C691 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F52FABD9287BDE4B0059C691 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F52FABDC287BDE4B0059C691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F52FABDE287BDE4D0059C691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F52FABE1287BDE4D0059C691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F52FABE3287BDE4D0059C691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52FABF0287BDF400059C691 /* CreditCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewModel.swift; sourceTree = "<group>"; };
+		F52FABF2287BDF640059C691 /* CreditCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardModel.swift; sourceTree = "<group>"; };
+		F52FABF5287BDFF30059C691 /* CreditCardViewComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewComposer.swift; sourceTree = "<group>"; };
+		F52FABF9287BE9580059C691 /* CreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
+		F52FABFA287BE9580059C691 /* CreditCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardViewController.xib; sourceTree = "<group>"; };
+		F52FABFD287BEAE30059C691 /* PhoneNumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberCell.swift; sourceTree = "<group>"; };
+		F52FABFE287BEAE30059C691 /* PhoneNumberCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneNumberCell.xib; sourceTree = "<group>"; };
+		F52FAC01287BEC8A0059C691 /* EmailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCell.swift; sourceTree = "<group>"; };
+		F52FAC02287BEC8A0059C691 /* EmailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailCell.xib; sourceTree = "<group>"; };
+		F52FAC06287BF25F0059C691 /* PhoneNumberCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhoneNumberCellController.swift; path = CreditCardApp/AddCardFeature/Controller/PhoneNumberCellController.swift; sourceTree = SOURCE_ROOT; };
+		F52FAC08287BF32C0059C691 /* PhoneNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewModel.swift; sourceTree = "<group>"; };
+		F52FAC0B287BF3A50059C691 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		F52FAC0D287BFAD20059C691 /* ValidateRegex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateRegex.swift; sourceTree = "<group>"; };
+		F52FAC0F287BFB540059C691 /* PhoneNumberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberModel.swift; sourceTree = "<group>"; };
+		F52FAC11287C113C0059C691 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		F5E8AFC0287ED21B0034B7FD /* EmailIdCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailIdCellController.swift; sourceTree = "<group>"; };
+		F5E8AFC2287ED3530034B7FD /* EmailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailModel.swift; sourceTree = "<group>"; };
+		F5E8AFC4287ED3670034B7FD /* EmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewModel.swift; sourceTree = "<group>"; };
+		F5E8AFC6287ED7690034B7FD /* CreditCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +90,96 @@
 		F52FABD4287BDE4B0059C691 /* CreditCardApp */ = {
 			isa = PBXGroup;
 			children = (
+				F52FAC0A287BF38A0059C691 /* Helpers */,
+				F52FABE9287BDE7E0059C691 /* AddCardFeature */,
 				F52FABD5287BDE4B0059C691 /* AppDelegate.swift */,
 				F52FABD7287BDE4B0059C691 /* SceneDelegate.swift */,
-				F52FABD9287BDE4B0059C691 /* ViewController.swift */,
-				F52FABDB287BDE4B0059C691 /* Main.storyboard */,
 				F52FABDE287BDE4D0059C691 /* Assets.xcassets */,
 				F52FABE0287BDE4D0059C691 /* LaunchScreen.storyboard */,
 				F52FABE3287BDE4D0059C691 /* Info.plist */,
 			);
 			path = CreditCardApp;
+			sourceTree = "<group>";
+		};
+		F52FABE9287BDE7E0059C691 /* AddCardFeature */ = {
+			isa = PBXGroup;
+			children = (
+				F52FABF4287BDFE40059C691 /* Composer */,
+				F52FABED287BDEA10059C691 /* ViewModels */,
+				F52FABEC287BDE9C0059C691 /* Models */,
+				F5E8AFBF287ED1F90034B7FD /* Controller */,
+				F52FABEB287BDE940059C691 /* View */,
+				F52FABEA287BDE900059C691 /* Views */,
+			);
+			path = AddCardFeature;
+			sourceTree = "<group>";
+		};
+		F52FABEA287BDE900059C691 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F52FABEB287BDE940059C691 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F52FABF9287BE9580059C691 /* CreditCardViewController.swift */,
+				F52FABFA287BE9580059C691 /* CreditCardViewController.xib */,
+				F52FABFD287BEAE30059C691 /* PhoneNumberCell.swift */,
+				F52FABFE287BEAE30059C691 /* PhoneNumberCell.xib */,
+				F52FAC01287BEC8A0059C691 /* EmailCell.swift */,
+				F52FAC02287BEC8A0059C691 /* EmailCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F52FABEC287BDE9C0059C691 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F52FABF2287BDF640059C691 /* CreditCardModel.swift */,
+				F52FAC0F287BFB540059C691 /* PhoneNumberModel.swift */,
+				F5E8AFC2287ED3530034B7FD /* EmailModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F52FABED287BDEA10059C691 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F52FABF0287BDF400059C691 /* CreditCardViewModel.swift */,
+				F52FAC08287BF32C0059C691 /* PhoneNumberViewModel.swift */,
+				F5E8AFC4287ED3670034B7FD /* EmailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F52FABF4287BDFE40059C691 /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+				F52FABF5287BDFF30059C691 /* CreditCardViewComposer.swift */,
+			);
+			path = Composer;
+			sourceTree = "<group>";
+		};
+		F52FAC0A287BF38A0059C691 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F52FAC0B287BF3A50059C691 /* UITableView+Extension.swift */,
+				F52FAC0D287BFAD20059C691 /* ValidateRegex.swift */,
+				F52FAC11287C113C0059C691 /* UITextField+Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F5E8AFBF287ED1F90034B7FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5E8AFC6287ED7690034B7FD /* CreditCardCell.swift */,
+				F52FAC06287BF25F0059C691 /* PhoneNumberCellController.swift */,
+				F5E8AFC0287ED21B0034B7FD /* EmailIdCellController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +240,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52FABFC287BE9580059C691 /* CreditCardViewController.xib in Resources */,
+				F52FAC04287BEC8A0059C691 /* EmailCell.xib in Resources */,
 				F52FABE2287BDE4D0059C691 /* LaunchScreen.storyboard in Resources */,
 				F52FABDF287BDE4D0059C691 /* Assets.xcassets in Resources */,
-				F52FABDD287BDE4B0059C691 /* Main.storyboard in Resources */,
+				F52FAC00287BEAE30059C691 /* PhoneNumberCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +255,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F52FABDA287BDE4B0059C691 /* ViewController.swift in Sources */,
+				F5E8AFC7287ED7690034B7FD /* CreditCardCell.swift in Sources */,
+				F52FAC0C287BF3A50059C691 /* UITableView+Extension.swift in Sources */,
+				F52FAC09287BF32C0059C691 /* PhoneNumberViewModel.swift in Sources */,
 				F52FABD6287BDE4B0059C691 /* AppDelegate.swift in Sources */,
+				F52FABF6287BDFF30059C691 /* CreditCardViewComposer.swift in Sources */,
+				F5E8AFC5287ED3670034B7FD /* EmailViewModel.swift in Sources */,
+				F5E8AFC3287ED3530034B7FD /* EmailModel.swift in Sources */,
+				F52FAC07287BF25F0059C691 /* PhoneNumberCellController.swift in Sources */,
+				F52FAC03287BEC8A0059C691 /* EmailCell.swift in Sources */,
+				F52FABF3287BDF640059C691 /* CreditCardModel.swift in Sources */,
+				F5E8AFC1287ED21B0034B7FD /* EmailIdCellController.swift in Sources */,
+				F52FAC0E287BFAD20059C691 /* ValidateRegex.swift in Sources */,
 				F52FABD8287BDE4B0059C691 /* SceneDelegate.swift in Sources */,
+				F52FAC12287C113C0059C691 /* UITextField+Extension.swift in Sources */,
+				F52FABF1287BDF400059C691 /* CreditCardViewModel.swift in Sources */,
+				F52FABFF287BEAE30059C691 /* PhoneNumberCell.swift in Sources */,
+				F52FABFB287BE9580059C691 /* CreditCardViewController.swift in Sources */,
+				F52FAC10287BFB540059C691 /* PhoneNumberModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F52FABDB287BDE4B0059C691 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F52FABDC287BDE4B0059C691 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F52FABE0287BDE4D0059C691 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +416,6 @@
 				INFOPLIST_FILE = CreditCardApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +443,6 @@
 				INFOPLIST_FILE = CreditCardApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
