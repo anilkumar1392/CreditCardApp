@@ -57,24 +57,20 @@ public class CreditCardViewModel {
     }
     
     private func validateEmail() -> Bool {
-        guard let phoneNumber = getEmail() else { return false }
-        let isValid = Utility.validateRegex(regex: EmailModel.emailRegex, forString: phoneNumber)
+        guard let email = getEmail() else { return false }
+        let isValid = Utility.validateRegex(regex: EmailModel.emailRegex, forString: email)
         return isValid
     }
 }
 
 // MARK: - Confirm to phone number delegate
 
-extension CreditCardViewModel: PhoneNumberCellDelegate, EmailCellDelegate {
-    func didUpdateEmailID(emailID: String?) {
-        setEmailID(emailId: emailID)
-    }
-    
+extension CreditCardViewModel: PhoneNumberCellDelegate {
     func didUpdatePhoneNumber(phoneNumber: String?) {
         setPhoneNumber(number: phoneNumber)
     }
     
     func emailUpdated(_ email: String?) -> Void {
-        setEmailID(emailId: emailID)
+        setEmailID(emailId: email)
     }
 }

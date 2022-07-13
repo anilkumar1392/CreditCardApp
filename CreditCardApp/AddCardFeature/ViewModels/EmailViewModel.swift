@@ -7,23 +7,16 @@
 
 import Foundation
 
-protocol EmailCellDelegate {
-    func didUpdateEmailID(emailID: String?)
-}
-
 class EmailIDViewModel {
     private var model: EmailModel
-    private var delegate: EmailCellDelegate
     var didChangeEmail: ((_ email: String?) -> Void)?
 
-    init(model: EmailModel, delegate: EmailCellDelegate) {
+    init(model: EmailModel) {
         self.model = model
-        self.delegate = delegate
     }
     
     func setEmail(email: String) {
         model.emailID = email
-        delegate.didUpdateEmailID(emailID: email)
         didChangeEmail?(email)
     }
     
