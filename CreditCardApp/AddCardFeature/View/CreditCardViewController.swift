@@ -55,7 +55,9 @@ class CreditCardViewController: UIViewController {
     }
     
     func bindView() {
-        
+        viewModel?.enableProceed = { [weak self] enable in
+            self?.configureContinueBtn(enable)
+        }
     }
 }
 

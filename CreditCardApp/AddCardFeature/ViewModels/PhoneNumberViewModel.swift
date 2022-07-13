@@ -7,11 +7,17 @@
 
 import Foundation
 
+protocol PhoneNumberCellDelegate {
+    func didUpdatePhoneNumber(phoneNumber: String?)
+}
+
 class PhoneNumberViewModel {
     private var model: PhoneNumberModel
+    var delegate: PhoneNumberCellDelegate
     
-    init(model: PhoneNumberModel) {
+    init(model: PhoneNumberModel, delegate: PhoneNumberCellDelegate) {
         self.model = model
+        self.delegate = delegate
     }
 
     func getRegex() -> String? {
@@ -44,6 +50,7 @@ class PhoneNumberViewModel {
     
     func setPhoneNumber(phoneNumber: String?) {
         model.phoneNumber = phoneNumber
+        delegate.didUpdatePhoneNumber(phoneNumber: phoneNumber)
     }
     
     func validatePhoneNumber() -> Bool {

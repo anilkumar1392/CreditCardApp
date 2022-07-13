@@ -62,3 +62,17 @@ public class CreditCardViewModel {
         return isValid
     }
 }
+
+// MARK: - Confirm to phone number delegate
+
+extension CreditCardViewModel: PhoneNumberCellDelegate, EmailCellDelegate {
+    func didUpdateEmailID(emailID: String?) {
+        print("CreditCardViewModel--- \(emailID)")
+        setEmailID(emailId: emailID)
+    }
+    
+    func didUpdatePhoneNumber(phoneNumber: String?) {
+        print("CreditCardViewModel--- \(phoneNumber)")
+        setPhoneNumber(number: phoneNumber)
+    }
+}

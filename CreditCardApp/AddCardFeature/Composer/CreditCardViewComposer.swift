@@ -14,29 +14,34 @@ public class CreditCardViewComposer {
         let viewModel = CreditCardViewModel(title: "Credit/Debit Card")
         let vc = CreditCardViewController.make(viewModel: viewModel)
         
-        let phoneNoController = getPhoneNumberController()
-        let emailController = getEmailController()
+        let phoneNoController = getPhoneNumberController(delegate: viewModel)
+        let emailController = getEmailController(delegate: viewModel)
 
         vc.tableModel = [phoneNoController, emailController]
         return vc
     }
     
-    private static func getPhoneNumberController() -> PhoneNumberCellController {
+    private static func getPhoneNumberController(delegate: PhoneNumberCellDelegate) -> PhoneNumberCellController {
         let phoneNoModel = PhoneNumberModel(
             phoneNumber: nil,
             errorMsg: nil,
             regex: PhoneNumberModel.phoneNumberRegex,
             phoneNumberLength: PhoneNumberModel.phoneNoLength,
             placeHolder: "Enter mobile no")
-        let phoneNoViewModel = PhoneNumberViewModel(model: phoneNoModel)
+        let phoneNoViewModel = PhoneNumberViewModel(model: phoneNoModel, delegate: delegate)
         return PhoneNumberCellController(viewModel: phoneNoViewModel)
     }
     
-    private static func getEmailController() -> EmailIdCellController {
-        let emailModel = EmailModel(emailID: nil, errorMsg: nil, regex: EmailModel.emailRegex, placeHolder: "Enter Email")
-        let viewModel = EmailIDViewModel(model: emailModel)
+    private static func getEmailController(delegate: EmailCellDelegate) -> EmailIdCellController {
+        let emailModel = EmailModel(
+            emailID: nil,
+            errorMsg: nil,
+            regex: EmailModel.emailRegex,
+            placeHolder: "Enter Email")
+        let viewModel = EmailIDViewModel(model: emailModel, delegate: delegate)
         return EmailIdCellController(viewModel: viewModel)
     }
+
 }
 
 private extension CreditCardViewController {
